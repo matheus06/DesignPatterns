@@ -1,0 +1,8 @@
+﻿Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Declarar uma interface que será seu Componente.
+Criar um Componente concreto que herda (-|> inheritance) a interface e implementa seus métodos.
+Para Decorar/Adicionar funções a este Componente concreto é necessário criar uma interface Decorator que herda (-|> inheritance) da interface Compoente.
+Criar um Decorator concreto que herda (-|> inheritance) da interface Decorator e recebe uma referência ( -> composition) do Componete via construtor.
+Este Decorator concreto extende funcionalidade chamando a função do componente que ele recebeu junto com sua implementação local.
+Pode se usar uma classe abstract ao invés de Interface para que p relacionamento de ( -> composition) seja feito na classe abstract.

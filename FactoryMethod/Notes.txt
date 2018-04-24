@@ -1,0 +1,7 @@
+﻿Define an interface for creating an object, but let subclasses decide which class to instantiate. 
+Factory Method lets a class defer instantiation to subclasses.
+
+Definir uma interface para o seu Creator com uma função onde o mesmo retorna uma Interface do Produto.
+Criar um Creator concreto que herda (-|> inheritance) do Creator retornando um Produto Concreto que herda (-|> inheritance) de Produto.
+
+**Ao invés de criar classes do mesmo tipo em um único local podemos criar classes do mesmo tipo através de uma classe de fabricação e encapsular o código que cria objetos.

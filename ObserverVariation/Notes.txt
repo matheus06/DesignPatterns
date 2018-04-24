@@ -1,0 +1,7 @@
+﻿Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
+Declarar uma interface Subject/IObservable para servir as informações e uma interface IObserver para inscrever a essas informações.
+As classes concretas herdam (-|> inheritance) das interfaces.
+A classe concreta IObservable possui uma lista de IObserver onde os mesmos são adicionados a cada chamada do método Attach() ou removidos pelo método Detach().
+Quando o método Notify() da classe concreta IObservable é disparado executa-se um foreach na lista executando o método Update() de todas as classes concretas de IObserver existentes.
+A classe concreta de IObserver pode receber o novo valor da concreta IObservable via parâmetro do método Update(IObservable foo)

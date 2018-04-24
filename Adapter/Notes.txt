@@ -1,0 +1,7 @@
+﻿Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+
+Com uma classe Target que executa o método Request() e o Client já a possui, você herda (-|> inheritance) a mesma através de uma classe Adapter.
+A classe Adapter recebe via construtor uma classe Adaptee que possui um método SpecificRequest().
+Ao instanciar a Target você pode usar o Adapter como a mesma é filha e ao usar o método Request() da Adapter a mesma chama o método SpecificRequest().
+
+*O Adapter permite que interfaces incompatíveis trabalhem em conjunto – o que, de outra forma, seria impossível.

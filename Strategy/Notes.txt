@@ -1,0 +1,9 @@
+﻿Define a family of algorithms, encapsulate each one, and make them interchangeable.
+Strategy lets the algorithm vary independently from clients that use it.
+
+Declarar uma interface comum pra uma familia de algoritimos.
+As familias são as estratégias/classes concretas que herdam (-|> inheritance) a interface e executam a estratégia em si.
+A classe de contexto possui referência ( -> composition) para as interfaces de estratégia.
+De acordo com a estratégia concreta definida para a classe de contexto a mesma pode ser executada pelo contexto.
+
+Ao invés de termos várias classes com comportamentos diferentes através de herança podemos implementar este padrão!
